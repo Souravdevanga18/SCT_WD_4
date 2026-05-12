@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Smart Task Manager</title>
+
+  <link rel="stylesheet"
+  href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+
+    <h1>📌 Smart Task Manager</h1>
+
+    <button id="themeBtn">
+      🌙
+    </button>
+
+  </header>
+
+  <div class="dashboard">
+
+    <div class="box">
+      <h2 id="total">0</h2>
+      <p>Total Tasks</p>
+    </div>
+
+    <div class="box">
+      <h2 id="done">0</h2>
+      <p>Completed</p>
+    </div>
+
+    <div class="box">
+      <h2 id="percent">0%</h2>
+      <p>Progress</p>
+    </div>
+
+  </div>
+
+  <div class="task-input">
+
+    <input
+    type="text"
+    id="taskInput"
+    placeholder="Enter Task">
+
+    <textarea
+    id="noteInput"
+    placeholder="Task Notes">
+    </textarea>
+
+    <select id="priority">
+
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+
+    </select>
+
+    <button id="addBtn">
+      Add Task
+    </button>
+
+  </div>
+
+  <div class="controls">
+
+    <input
+    type="text"
+    id="search"
+    placeholder="Search Task">
+
+    <select id="filter">
+
+      <option value="all">All</option>
+
+      <option value="completed">
+        Completed
+      </option>
+
+      <option value="pending">
+        Pending
+      </option>
+
+    </select>
+
+  </div>
+
+  <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
